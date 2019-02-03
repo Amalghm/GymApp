@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appblue"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/menu_desc_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="15dp"
+        android:background="#7B4869"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/menu_desc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Student LogIn"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="23dp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="132dp"
+        android:layout_height="173dp"
+        android:layout_marginBottom="354dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_desc_toolbar"
+        app:srcCompat="@drawable/logoicon" />
+
+    <EditText
+        android:id="@+id/studentPasswordLogin"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/StudentNumLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/StudentNumLogin"
+        app:layout_constraintTop_toBottomOf="@+id/StudentNumLogin" />
+
+    <EditText
+        android:id="@+id/StudentNumLogin"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      Student Number"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/StudentLoginBtn"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/appblue"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentPasswordLogin" />
+
+    <Button
+        android:id="@+id/StudentSubscribeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="268dp"
+        android:layout_marginRight="268dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/transparent"
+        android:text="Subscribe?"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentLoginBtn" />
+
+    <Button
+        android:id="@+id/studentForgetPasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:text="Forget Password?"
+        android:textAllCaps="false"
+        android:textColor="	#FF4500"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentLoginBtn" />
+
+</android.support.constraint.ConstraintLayout>
