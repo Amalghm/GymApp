@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "348694234391",
+    "firebase_url": "https://ksu-gym-26109.firebaseio.com",
+    "project_id": "ksu-gym-26109",
+    "storage_bucket": "ksu-gym-26109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348694234391:android:e5aded646e0286b1",
+        "android_client_info": {
+          "package_name": "com.example.app.ksugym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348694234391-4k0vep8u6v1k5iu8hsoh0p6gjs65u4b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUMiwaCsizH8HqTOcvG4-z0jpc9qb3V6U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
