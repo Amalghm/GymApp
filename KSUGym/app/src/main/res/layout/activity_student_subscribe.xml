@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appblue"
+    tools:context=".Students.StudentSubscribe">
+
+    <EditText
+        android:id="@+id/StudentNum"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="328dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="96dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      University ID"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/StudentSubscribeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/StudentHeight"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      Height/Cm"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/StudentNum"
+        app:layout_constraintStart_toStartOf="@+id/StudentNum"
+        app:layout_constraintTop_toBottomOf="@+id/StudentNum" />
+
+    <EditText
+        android:id="@+id/StudentWeight"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      Weight/KG"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/StudentHeight"
+        app:layout_constraintStart_toStartOf="@+id/StudentHeight"
+        app:layout_constraintTop_toBottomOf="@+id/StudentHeight" />
+
+    <EditText
+        android:id="@+id/StudentPassword"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/StudentEmail"
+        app:layout_constraintStart_toStartOf="@+id/StudentEmail"
+        app:layout_constraintTop_toBottomOf="@+id/StudentEmail" />
+
+    <Button
+        android:id="@+id/StudentSubscribeBtn"
+        android:layout_width="273dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn"
+        android:text="Subscribe"
+        android:textAllCaps="false"
+        android:textColor="@color/appblue"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/StudentPassword"
+        app:layout_constraintStart_toStartOf="@+id/StudentPassword"
+        app:layout_constraintTop_toBottomOf="@+id/StudentNum" />
+
+    <EditText
+        android:id="@+id/StudentEmail"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      Email"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/StudentWeight"
+        app:layout_constraintStart_toStartOf="@+id/StudentWeight"
+        app:layout_constraintTop_toBottomOf="@+id/StudentWeight" />
+
+    <EditText
+        android:id="@+id/StudentName"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:background="#80000000"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="      Name"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/StudentNum"
+        app:layout_constraintEnd_toEndOf="@+id/StudentNum"
+        app:layout_constraintStart_toStartOf="@+id/StudentNum" />
+</android.support.constraint.ConstraintLayout>
+
+
